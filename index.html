@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dubai Tourism Price Comparison</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Main Application -->
+    <div id="mainApp" class="main-app">
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h1>Dubai Tourism</h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="container">
+                <!-- Search Section -->
+                <div class="search-section">
+                    <h2>Search Tourism Products</h2>
+                    
+                    <div class="search-container">
+                        <div class="search-box">
+                            <i class="fas fa-search search-icon"></i>
+                            <input type="text" id="searchInput" placeholder="Search for tours, attractions, or activities...">
+                            <button id="searchBtn" class="search-btn">Search</button>
+                        </div>
+                        
+                        <!-- Suggestions Dropdown -->
+                        <div id="suggestions" class="suggestions" style="display: none;"></div>
+                    </div>
+                </div>
+
+                <!-- Search Results -->
+                <div id="searchResults" class="search-results" style="display: none;">
+                    <h3 id="resultsTitle">Results</h3>
+                    <div id="resultsContainer"></div>
+                </div>
+
+                <!-- No Results -->
+                <div id="noResults" class="no-results" style="display: none;">
+                    <i class="fas fa-search"></i>
+                    <h3>No results found</h3>
+                    <p>Try searching with different keywords</p>
+                </div>
+
+                <!-- Welcome Message -->
+                <div id="welcomeMessage" class="welcome-message">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Dubai Tourism Products</h3>
+                    <p>Search for tourism products, attractions, or activities in Dubai.</p>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2025 Dubai Tourism</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
